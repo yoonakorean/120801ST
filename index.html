@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>1-3 句子聽打挑戰</title>
+<title>8-1 句子聽打挑戰</title>
 <style>
 body { font-family: sans-serif; max-width: 600px; margin: auto; text-align: center; padding: 30px 15px; }
 #logo, #logo-game { width: 150px; max-width: 80%; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto; }
@@ -56,16 +56,18 @@ if (password !== "1231") { alert("密碼錯誤，無法進入！"); window.locat
 
 <script>
 const questions = [
-  { audio: "21010301S.mp3", answer: "아침에 보통 커피를 마시거나 빵을 먹어요.", chinese: "早上通常都喝咖啡或吃麵包。" },
-  { audio: "21010302S.mp3", answer: "주말에 시간이 있으면 보통 집에서 청소하거나 음악을 들어요.", chinese: "週末有時間的話一般在家打掃或聽音樂。" },
-  { audio: "21010303S.mp3", answer: "스트레스를 받으면 운동을 하거나 맛있는 음식을 먹어요.", chinese: "壓力很大的話就會運動或吃好吃的食物。" },
-  { audio: "21010304S.mp3", answer: "졸리면 커피를 마시거나 잠깐 쉬세요.", chinese: "愛睏的話就喝咖啡或稍微休息。" },
-  { audio: "21010305S.mp3", answer: "비가 오면 택시를 타거나 집에 있어요.", chinese: "下雨的話就搭計程車或者就在家。" },
-  { audio: "21010306S.mp3", answer: "회의가 끝나고 점심을 먹거나 커피를 마실까요?", chinese: "開會結束後要不要吃中餐或喝咖啡？" },
-  { audio: "21010307S.mp3", answer: "이 문제를 혼자 해결하거나 선생님께 물어보세요.", chinese: "這個問題請自己解決或者問老師。" },
-  { audio: "21010308S.mp3", answer: "한국어를 배우고 한국 회사에 취직하거나 번역사가 되고 싶어요.", chinese: "學了韓文之後想去韓國公司上班或成為翻譯。" },
-  { audio: "21010309S.mp3", answer: "쉬는 날에 보통 집에서 빨래하거나 도서관에 가서 숙제해요.", chinese: "休息的日子一般在家洗衣服或去圖書館寫作業。" },
-  { audio: "21010310S.mp3", answer: "일이 많으면 동료한테 부탁하거나 야근해요.", chinese: "事情太多的話就拜託同事或加班。" }
+  { audio: "12080101S.mp3", answer: "저는 한국말을 조금 할 수 있어요.", chinese: "我會講一點韓文。" },
+  { audio: "12080102S.mp3", answer: "이 음식은 너무 매워서 먹을 수 없어요.", chinese: "這食物太辣了，沒辦法吃。" },
+  { audio: "12080103S.mp3", answer: "돈이 없어서 여행을 갈 수 없어요.", chinese: "因為沒有錢，所以不能去韓國。" },
+  { audio: "12080104S.mp3", answer: "회의하고 있어서 통화할 수 없어요.", chinese: "正在開會所以沒辦法通話。" },
+  { audio: "12080105S.mp3", answer: "바이올린을 켤 수 있어요.", chinese: "我可以拉小提琴。" },
+  { audio: "12080106S.mp3", answer: "박물관에서 사진을 찍을 수 없어요.", chinese: "在博物館不可以拍照。" },
+  { audio: "12080107S.mp3", answer: "수업이 끝나고 같이 밥을 먹을 수 있어요?", chinese: "下課後可以一起吃飯嗎？" },
+  { audio: "12080108S.mp3", answer: "일이 많아서 주말에도 쉴 수 없어요.", chinese: "工作很多，連週末都不能休息。" },
+  { audio: "12080109S.mp3", answer: "회원 가입을 안 해서 콘서트 표를 예매할 수 없어요.", chinese: "因為沒加入會員，所以沒辦法買演唱會票。" },
+  { audio: "12080110S.mp3", answer: "감기에 걸려서 가족 모임에 갈 수 없어요.", chinese: "因為感冒了，所以不能去家族聚會。" },
+  { audio: "12080111S.mp3", answer: "핸드폰이 고장이 나서 음악을 들을 수 없어요.", chinese: "因為手機故障，所以不能聽音樂。" },
+  { audio: "12080112S.mp3", answer: "노래도 잘하고 춤도 출 수 있어요.", chinese: "很會唱歌還會跳舞。" }
 ];
 
 const modeSelectDiv = document.getElementById("mode-select");
@@ -100,8 +102,8 @@ let currentMode = null;
 let startTime = null; // 記錄挑戰開始時間
 
 // 顯示標題與送表單標題
-const displayTitle = "1-3 句子聽打挑戰";
-const fullTitle = "21-1-3 句子聽打挑戰";
+const displayTitle = "8-1 句子聽打挑戰";
+const fullTitle = "12-8-1 句子聽打挑戰";
 
 function shuffle(array){for(let i=array.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[array[i],array[j]]=[array[j],array[i]];}return array;}
 
